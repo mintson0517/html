@@ -1,0 +1,85 @@
+<!DOCTYPE html><!--Hyper Text Markup Language-->
+<html lang="ja"><!--ja(日本語)en（英語）zh-tw(台湾の中国語)-->
+<head>
+    <meta charset="UTF-8">
+    <!--文字化け防止/character set(文字セット)/終了タグは不要-->
+    <!--このページのmeta情報を表す(ページの情報を属性で指定する)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLの練習</title><!--ページのタイトル-->
+</head>
+<body>
+    <!--参考のウェブサイト：https://www.tohoho-web.com/wwwbeg.htm-->
+    <h1>h1見出しタグ</h1>
+    <h2>h2見出しタグ</h2>
+    <h3>h3見出しタグ</h3>
+    <h4>h4見出しタグ</h4>
+    <h5>h5見出しタグ</h5>
+    <h6>h6見出しタグ</h6> <!--h1〜h6まである-->
+
+    Hellow　<b>World</b><!--bold(太字)--><br><!--breack(改行)-->
+    Hellow　<i>World</i><!--italic(斜体)-->
+    <p>Hellow World</p><!--paragraph(各段落)-->
+    Hellow <span style="font-weight: bold;">World</span><!--HTML上で太字--><br>
+    Hellow <span style="font-weight: italic;">World</span><!--HTML上で斜体--><br>
+    Hellow <span style="font-size: 180%;">World</span><!--HTML上で文字を大きくする--><br>
+    Hellow <span style="color: red;">World</span><br><!--HTML上で文字の色変更-->
+    Hellow <span style="font-family: 'Courier New', Courier, monospace;">World</span> <!--HTML上でフォントの指定-->
+
+    <ul><!--・でリストを作成-->
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+
+    <ol><!--数字でリストを作成-->
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ol>
+
+    <dl><!--用語の説明リストを記述-->
+        <dt>Hellow</dt>
+        <dd>World</dd>
+    </dl>
+
+    <table border=10><!--枠の外枠太さ--> 
+        <tr><td>名前</td><td>生年月日</td><td>職業</td></tr><!--<tr>1行/<td>一1ス-->
+        <tr><td>Mintson</td><td>2004/05/17</td><td>大学生</td></tr>
+    </table><br>
+
+    <table border=1>
+        <tr><td></td><td>日本</td><td>台湾</td></tr>
+        <tr><td>首都</td><td>東京</td><td>台北</td></tr>
+        <tr><td>地域区分</td><td colspan="2">アジア州</td></tr>
+        <!--<td colspan=n>右方向にn個のセルを連結--> 
+        </table><br>
+<!--ここまで-->
+    <table border=1>
+        <tr><td rowspan=2>営業日</td><td>平日</td><td>休日</td></tr><!--td rowspan=nで縦方向nこのセルを連結-->
+        <tr><td>○</td><td>X</td></tr>
+    </table><br>
+
+    <table border=1 style="border-collapse:collapse;"><!--border-collapseでテーブルの枠線を細くする-->
+        <tr><td>○</td><td>○</td><td>○</td></tr>
+        <tr><td>○</td><td>○</td><td>○</td></tr>
+        <tr><td>○</td><td>○</td><td>○</td></tr>
+    </table><br>
+
+    <table border=1><!--background-colorでテーブルに色をつける-->
+        <tr><td rowspan=2>営業日</td><td>平日</td><td>休日</td></tr>
+        <tr><td>○</td><td style="background-color:rgb(255, 0, 0);"">X</td></tr>
+    </table><br>
+
+    <!--リンクを表示させる-->
+    <a href="https://www.tohoho-web.com/wwwbeg.htm">Webページ制作入門</a>
+    <!--別のウィンドウで表示（target="_blank"-->
+    <a target="_blank" href="https://www.tohoho-web.com/wwwbeg.htm">Webページ制作入門（別ウィンドウ）</a>
+
+    <!--画像を貼り付けよう--><!--width(横)height(縦)-->
+    <img src="./image_folder/profile_noman.png" width=100 height=100 alt="NoMan">
+    
+    <a target="_blank" href="https://www.tohoho-web.com/">
+        <img src="./image_folder/tohoho.png"  alt="NoMan">
+    </a>
+</body>
+</html>
